@@ -1,0 +1,74 @@
+*, *:after, *:before {
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  margin: 60px;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: white;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+p {
+  text-align: center;
+  margin: 20px 70px; }
+
+h2 {
+  margin-top: 50px; }
+
+.ft-form form {
+  transition: opacity 0.2s ease-in; }
+.ft-form.-loading form {
+  opacity: 0.5; }
+.ft-form .form-progress-bar {
+  display: none; }
+  .ft-form .form-progress-bar.-show {
+    display: block; }
+
+input, textarea {
+  width: 100%;
+  font-size: 100%;
+  border: 1px solid #999;
+  padding: 4px; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  padding: 0; }
+
+.form-field {
+  margin-bottom: 20px; }
+
+.form-feedback {
+  padding: 20px; }
+  .form-feedback.-success {
+    background-color: #7cd17c;
+    color: #0f6e0f; }
+  .form-feedback.-error {
+    background-color: #ffbbbb;
+    color: #850202; }
+  .form-feedback.-warn {
+    background-color: #f3c47d;
+    color: #ce7c01; }
+
+.form-progress-bar {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background-color: #eee; }
+  .form-progress-bar > .loaded {
+    width: 0%;
+    height: 100%;
+    background-color: #999;
+    transition: width .1s ease-in; }
+  .form-progress-bar > .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333; }
+
+/*# sourceMappingURL=demo.scss.css.map */
